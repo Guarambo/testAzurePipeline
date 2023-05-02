@@ -1,0 +1,13 @@
+trigger: none # Disable CI triggers.
+
+pool:
+#  name: Nequi QC
+  vmImage: ubuntu-latest
+  
+steps:
+  - task: Bash@3
+    displayName: "ECHO"
+    inputs:
+      targetType: 'inline'
+      script: |
+        echo "hola"
